@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.site-container{
+  min-height: 100vh;
+}
+
+main{
+  flex: 1;
+
+}
+
+.btn-primary,.btn-outline-primary{
+  
+}
+
+
+
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.img-large{
+  max-width: 100%;
+
+}
+
+.rating span{
+  color: #ffc000;
+}
+
+.product{
+  border: 1px #404040 solid;
+  margin: 1rem;
+
+
+}
+
+.img-thumbnail{
+  height:80px;
+}
+.product img{
+  width: 100%;
+  max-width: 400px;
+}
+
+.product-image{
+  height: 300px;
+
+}
+.product-info{
+  padding: 1rem;;
+}
+
+.small-container{
+  max-width: 600px;
+}
+
+.checkout-steps{
+  padding-bottom: 10px;
+}
+
+.checkout-steps > div {
+  border-bottom: 0.2rem solid #a0a0a0;
+  color: #a0a0a0;
+}
+
+.checkout-steps > div.active{
+  border-bottom: 0.2rem solid #f08000;
+  color: #f08000;
+}
+
+/* sidebar */
+.navbar-brand {
+  font-weight: bold;
+}
+.side-navbar {
+  width: 240px;
+  height: 100%;
+  position: absolute;
+  left: -300px;
+  background-color: #100901;
+  transition: 0.5s;
+}
+
+.site-container {
+  transition: 0.4s;
+}
+.active-cont {
+  margin-left: 240px;
+}
+.active-nav {
+  left: 0;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.button-active{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 25%, rgba(0,212,255,1) 100%);
+/* background: radial-gradient(circle, rgba(217,63,251,1) 0%, rgba(23,123,175,0.9307073171065301) 100%); */
+font-size: larger;
+  margin: 1%;
+  width:40%;
+}
+.button{
+  background-color: #757575;
+  color: white;
+  width: 40%;
+}
+
+.disNon{
+  display: none;
+}
+
+.card-image{
+  width: auto;
+  height: 200px;
+}
+
+
+.footer{
+  margin-top: 200px;
+}
+.text-white{
+  color: white;
+}
+
+.heading {
+  margin: 30px 0px;
+  padding: 1%;
+  padding-left: 10%;
+background: rgb(216,4,238);
+background: radial-gradient(circle, rgba(216,4,238,0.9699230033810399) 0%, rgba(23,59,175,0.9307073171065301) 100%);
+/* border-radius: 5%; */
+border-radius: 25px;
+}
+
+

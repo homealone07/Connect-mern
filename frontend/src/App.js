@@ -62,10 +62,10 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div >
+      {/* <div > */}
         <ToastContainer position="bottom-center" limit={1} />
         <header>
-          <Navbar bg="dark" variant="dark" expand="lg">
+          <Navbar bg="dark" variant="dark" className="text-white" expand="lg">
             <Container>
            
               <LinkContainer to="/">
@@ -74,11 +74,10 @@ function App() {
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
               <SearchBox />
-                <Nav className="me-auto  w-100  justify-content-end">
+                <Nav variant="pills" className="me-auto navtext w-100 justify-content-end">
                   <Link to="/" className="nav-link">Home</Link>
                   <Link to="/products" className="nav-link">Products</Link>
                   <Link to="/services" className="nav-link">Services</Link>
-                  <Link to="/contact" className="nav-link">Contact Us</Link>
                   <Link to="/cart" className="nav-link">
                     Cart
                     {cart.cartItems.length > 0 && (
@@ -236,7 +235,7 @@ function App() {
         <footer>
           <Footer />
         </footer>
-      </div>
+      {/* </div> */}
     </BrowserRouter>
   );
 }

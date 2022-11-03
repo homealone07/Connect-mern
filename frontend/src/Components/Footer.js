@@ -3,33 +3,7 @@ import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-k
 
 export default function Footer() {
   return (
-    <MDBFooter bgColor='dark' className='text-center footer text-lg-start text-muted text-white'>
-      <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
-        <div className='me-5 d-none d-lg-block'>
-          <span>Get connected with us on social networks:</span>
-        </div>
-
-        <div>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon fab icon="facebook-f" />
-          </a>
-          <a href='#' className='me-4 text-reset'>
-            <MDBIcon fab icon="twitter" />
-          </a>
-          <a href='#' className='me-4 text-reset'>
-            <MDBIcon fab icon="google" />
-          </a>
-          <a href='https://www.instagram.com/santhosh.22.11/' className='me-4 text-reset'>
-            <MDBIcon fab icon="instagram" />
-          </a>
-          <a href='https://www.linkedin.com/in/raminedisanthosh22/' className='me-4 text-reset'>
-            <MDBIcon fab icon="linkedin" />
-          </a>
-          <a href='https://github.com/Santhosh2231' className='me-4 text-reset'>
-            <MDBIcon fab icon="github" />
-          </a>
-        </div>
-      </section>
+    <MDBFooter bgColor='dark' className='text-center footer text-lg-start text-white'>
 
       <section className=''>
         <MDBContainer className='text-center text-md-start mt-5'>

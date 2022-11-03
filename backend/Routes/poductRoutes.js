@@ -143,6 +143,31 @@ productRouter.get(
   );
 
 productRouter.get(
+  '/product/categories',
+  expressAsyncHandler(async (req, res) => {
+    // console.log("JNVNVNV");
+    const categories = await Product.find({type:'product'}).distinct('category');
+    // console.log(categories);
+    res.send(categories);
+  })
+);
+
+
+productRouter.get(
+  '/service/categories',
+  expressAsyncHandler(async (req, res) => {
+    const categories = await Product.find({type:'service'}).distinct('category');
+    res.send(categories);
+  })
+);
+
+
+
+
+
+
+
+productRouter.get(
   '/product/:category',
   expressAsyncHandler(async (req, res) => {
     const cat = req.params.category;

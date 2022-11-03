@@ -59,7 +59,7 @@ const AddNewProduct = () => {
                 },{headers: { Authorization: `Bearer ${SMEInfo.token}`} });
                 // navigate(redirect || '/');
             }else{
-                const {data} = await axios.post("/api/products/services",{
+                const {data} = await axios.post("/api/products/service",{
                     name,slug,type,category,image,description,price,rating,numReviews,
                 },{headers: { Authorization: `Bearer ${SMEInfo.token}`} });
             }

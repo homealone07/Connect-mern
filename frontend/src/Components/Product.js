@@ -64,7 +64,7 @@ useEffect(()=>{
   return (
     products.map((product)=>(
       <Col  sm={6} md={4} lg={3} className="mb-3">
-      <Card className='col-12'>
+      <Card className='col-12 Card'>
       <Link to={`/product/${product.slug}`}>
         <img  src={product.image} className="card-img-top product-image" alt={product.name} />
       </Link>

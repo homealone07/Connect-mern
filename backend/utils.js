@@ -31,7 +31,7 @@ export const isAuth = (req, res, next) => {
 
   export const isSMEAuth =  (req, res, next) => {
     const authorization = req.headers.authorization;
-    console.log(authorization);
+    // console.log(authorization);
     if (authorization) {
       const token = authorization.slice(7, authorization.length); // Bearer XXXXXX
       jwt.verify(token, process.env.JWT_SECRET, async (err, decode) => {

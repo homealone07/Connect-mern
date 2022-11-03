@@ -80,7 +80,7 @@ smeRouter.post('/signup',expressAsyncHandler(async (req,res)=>{
         postalCode:req.body.postalCode,
         country:req.body.country,
     });
-    console.log(newSME);
+    // console.log(newSME);
     const sme = await newSME.save();
 
     try {

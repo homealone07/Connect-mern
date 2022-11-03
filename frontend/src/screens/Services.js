@@ -14,7 +14,7 @@ const reducer = (state,action)=>{
         case 'FETCH_REQUEST':
             return {...state,loading:true};
         case 'FETCH_SUCCESS':
-            return {...state,services: action.payload,loading:false};
+            return {...state,categories: action.payload,loading:false};
         case 'FETCH_FAIL':
             return {...state,loading:false,error:action.payload};
         default:
@@ -22,13 +22,13 @@ const reducer = (state,action)=>{
     }
 }
 
-const Services = () => {
+const HomeScreen = () => {
 
-    // const [services,setServices] = useState([]);
-    const [{loading,error,services},dispatch] = useReducer(reducer,{
+    // const [products,setProducts] = useState([]);
+    const [{loading,error,categories},dispatch] = useReducer(reducer,{
         loading:true,
         error:'',
-        services:[]
+        categories:[]
     })
 
     useEffect(()=>{
@@ -36,20 +36,20 @@ const Services = () => {
 
             dispatch({type:'FETCH_REQUEST'});
             try{
-                const result = await axios.get("/api/products/service");
-                dispatch({type:'FETCH_SUCCESS',payload:result.data});
+                // const result = await axios.get("/api/products/product");
+                const cat = await axios.get("/api/products/service/categories");
+                dispatch({type:'FETCH_SUCCESS',payload:cat.data});
             }catch(error){
                 dispatch({type:'FETCH_FAIL',payload: error.message});
             }
-            // setservices(result.data);
+            // setProducts(result.data);
         };
         fetchData();
     },[])
   return (
     <div>
-        <Helmet><title>Connect Services</title></Helmet>
-        <h1>Services</h1>
-        <div className="services">
+        <Helmet><title>Connect</title></Helmet>
+        <h1>Featured Services</h1>
         { loading ?  (
             <LoadingBox />
         ) : error ? (
@@ -57,19 +57,20 @@ const Services = () => {
         ) : 
             <Row>
 
-           {
-            services.map((product) => (
-                <Col key={product.slug} sm={6} md={4} lg={3} className="mb-3">
-                    <Product product={product} />
-                </Col>
+           
+          {
+            categories.map((cat) => (
+                <>
+                <h3 className='heading text-white'>{cat.toUpperCase()}</h3>
+                    <Product key={cat} product={cat} />
+                </>
             )
            
           )}
           </Row>
         }
-        </div>
     </div>
   )
 }
 
-export default Services
+export default HomeScreen

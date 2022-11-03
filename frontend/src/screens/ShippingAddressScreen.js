@@ -8,7 +8,7 @@ import { Store } from '../Store';
 const ShippingAddressScreen = () => {
     const {state,dispatch:ctxDispatch} = useContext(Store);
     const navigate = useNavigate();
-    const {userInfo,cart:{shippingAddress}} = state;
+    const {userInfo,SMEInfo,cart:{shippingAddress}} = state;
     
     const [fullName,setFullName] = useState(shippingAddress.fullName);
     const [address,setAddress] = useState(shippingAddress.address);
@@ -26,7 +26,7 @@ const ShippingAddressScreen = () => {
     }
 
     useEffect(()=>{
-        if(!userInfo){
+        if(!userInfo || !SMEInfo){
             navigate("/signin?redirect=/shipping");
         }
     },[userInfo,navigate])

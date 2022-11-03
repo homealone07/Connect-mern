@@ -36,8 +36,8 @@ const HomeScreen = () => {
 
             dispatch({type:'FETCH_REQUEST'});
             try{
-                const result = await axios.get("/api/products/product");
-                const cat = await axios.get("/api/products/categories");
+                // const result = await axios.get("/api/products/product");
+                const cat = await axios.get("/api/products/product/categories");
                 dispatch({type:'FETCH_SUCCESS',payload:cat.data});
             }catch(error){
                 dispatch({type:'FETCH_FAIL',payload: error.message});
@@ -50,7 +50,6 @@ const HomeScreen = () => {
     <div>
         <Helmet><title>Connect</title></Helmet>
         <h1>Featured products</h1>
-        <div className="products">
         { loading ?  (
             <LoadingBox />
         ) : error ? (
@@ -62,21 +61,14 @@ const HomeScreen = () => {
           {
             categories.map((cat) => (
                 <>
-                <h3 className='heading text-white'>{cat}</h3>
-                
-                
-                
-
-                
+                <h3 className='heading text-white'>{cat.toUpperCase()}</h3>
                     <Product key={cat} product={cat} />
-                
                 </>
             )
            
           )}
           </Row>
         }
-        </div>
     </div>
   )
 }

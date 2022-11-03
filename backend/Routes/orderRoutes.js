@@ -41,7 +41,7 @@ orderRouter.get(
   isSMEAuth,
   expressAsyncHandler(async (req, res) => {
     const products = await Product.find({smeBrand:req.SME._id});
-    console.log(products);
+    // console.log(products);
     const orders = await Order.aggregate([
       {
         $group: {
@@ -172,9 +172,9 @@ orderRouter.get(
   '/mine',
   isAuth,
   expressAsyncHandler(async (req, res) => {
-    console.log(req.user._id);
+    // console.log(req.user._id);
     const orders = await Order.find({ user: req.user._id });
-    console.log(orders)
+    // console.log(orders)
     res.send(orders);
   })
 );

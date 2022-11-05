@@ -89,20 +89,28 @@ function App() {
 
                   {(userInfo || SMEInfo) ? (
                     <NavDropdown title={userInfo ? userInfo.name:SMEInfo.name} id="basic-nav-dropdown">
-                      <LinkContainer to="/profile">
+                    
+                      {
+                        userInfo? (
+                          <>
+                          <LinkContainer to="/profile">
                         <NavDropdown.Item>User Profile</NavDropdown.Item>
                       </LinkContainer>
+
                       <LinkContainer to="/orderhistory">
                         <NavDropdown.Item>Order History</NavDropdown.Item>
                       </LinkContainer>
+                      </>
+                        ): <></>
+                      }
+                    
+                      
+
+
+
                       <NavDropdown.Divider />
-                      <Link
-                        className="dropdown-item"
-                        to="#signout"
-                        onClick={signoutHandler}
-                      >
-                        Sign Out
-                      </Link>
+
+                      <Link className="dropdown-item" to="#signout" onClick={signoutHandler}>Sign Out </Link>
                     </NavDropdown>
                   ) : (
                     <Link className="nav-link" to="/signin">
@@ -194,12 +202,12 @@ function App() {
                   </AdminRoute>
                 }
               ></Route>
-              <Route path="/orderhistory" element={<ProtectedRoute><OrderHistoryScreen /></ProtectedRoute>} />
+              <Route path="/orderhistory" element={<OrderHistoryScreen />} />
               <Route path="/profile"
                 element={
-                  <ProtectedRoute>
+                 
                     <ProfileScreen />
-                  </ProtectedRoute>
+                 
                 }
               />
               <Route

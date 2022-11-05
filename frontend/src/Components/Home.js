@@ -52,8 +52,8 @@ const Home = () => {
             {/* <!-- /.col-md-4 col --> */}
             <div className="col-md-4 editContent">
               <div className="col">
-                <span className="numberstep"><i className="fa fa-download"></i></span>
-                <h3 className="numbertext">Get Instand Download</h3>
+              <span className="numberstep"><i className="fa fa-shopping-cart"></i></span>
+                <h3 className="numbertext">Choose our Services</h3>
                 <p>
                   Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
                 </p>
@@ -64,106 +64,7 @@ const Home = () => {
       </div>
 
 
-      {/* <!-- LATEST ITEMS =============================--> */}
-      <div className="item content">
-        <div className="container">
-          <div className="underlined-title">
-            <div className="editContent">
-              <h1 className="text-center latestitems">LATEST ITEMS</h1>
-            </div>
-            <div className="wow-hr type_short">
-              <span className="wow-hr-h">
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
-              </span>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-md-4">
-              <div className="productbox">
-                <div className="fadeshop">
-                {/* style="display: none;" */}
-                  <div className="captionshop text-center">
-                    <h3>Item Name</h3>
-                    <p>
-                      This is a short excerpt to generally describe what the item is about.
-                    </p>
-                    <p>
-                      <a href="#" className="learn-more detailslearn"><i className="fa fa-shopping-cart"></i> Purchase</a>
-                      <a href="#" className="learn-more detailslearn"><i className="fa fa-link"></i> Details</a>
-                    </p>
-                  </div>
-                  <span className="maxproduct"><img src="images/product1-1.jpg" alt="" /></span>
-                </div>
-                <div className="product-details">
-                  <a href="#">
-                    <h1>Calypso Theme</h1>
-                  </a>
-                  <span className="price">
-                    <span className="edd_price">$49.00</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            {/* <!-- /.productbox --> */}
-            <div className="col-md-4">
-              <div className="productbox">
-                <div className="fadeshop">
-                {/* style="display: none;" */}
-                  <div className="captionshop text-center">
-                    <h3>Item Name</h3>
-                    <p>
-                      This is a short excerpt to generally describe what the item is about.
-                    </p>
-                    <p>
-                      <a href="#" className="learn-more detailslearn"><i className="fa fa-shopping-cart"></i> Purchase</a>
-                      <a href="#" className="learn-more detailslearn"><i className="fa fa-link"></i> Details</a>
-                    </p>
-                  </div>
-                  <span className="maxproduct"><img src="images/product2.jpg" alt=""/></span>
-                </div>
-                <div className="product-details">
-                  <a href="#">
-                    <h1>FastSell Theme</h1>
-                  </a>
-                  <span className="price">
-                    <span className="edd_price">$49.00</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            {/* <!-- /.productbox --> */}
-            <div className="col-md-4">
-              <div className="productbox">
-                <div className="fadeshop">
-                {/* style="display: none;" */}
-                  <div className="captionshop text-center" >
-                    <h3>Item Name</h3>
-                    <p>
-                      This is a short excerpt to generally describe what the item is about.
-                    </p>
-                    <p>
-                      <a href="#" className="learn-more detailslearn"><i className="fa fa-shopping-cart"></i> Purchase</a>
-                      <a href="#" className="learn-more detailslearn"><i className="fa fa-link"></i> Details</a>
-                    </p>
-                  </div>
-                  <span className="maxproduct"><img src="images/product2-3.jpg" alt=""/></span>
-                </div>
-                <div className="product-details">
-                  <a href="#">
-                    <h1>Biscaya Theme</h1>
-                  </a>
-                  <span className="price">
-                    <span className="edd_price">$49.00</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-
+     
 
   {/* <!-- BUTTON =============================--> */ }
   <div className = "item content" >

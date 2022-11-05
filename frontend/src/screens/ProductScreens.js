@@ -83,7 +83,7 @@ const ProductScreens = () => {
                     <ListGroup.Item>
                         <Rating rating={product.rating} numReviews={product.numReviews} />
                     </ListGroup.Item>
-                    <ListGroup.Item>Price : $ {product.price}</ListGroup.Item>
+                    <ListGroup.Item>Price : <i class="fa fa-inr"></i> {" "} {product.price}</ListGroup.Item>
                     <ListGroup.Item>Description: {product.description}</ListGroup.Item>
                 </ListGroup>
             </Col>
@@ -94,13 +94,13 @@ const ProductScreens = () => {
                             <ListGroup.Item>
                                 <Row>
                                     <Col>Price: </Col>
-                                    <Col> $ {product.price}</Col>
+                                    <Col> <i class="fa fa-inr"></i> {" "} {product.price}</Col>
                                 </Row>
                             </ListGroup.Item>
                             <ListGroup.Item>
                                 <Row>
                                     <Col>Status: </Col>
-                                    <Col>{product.countInStock>10 ? 
+                                    <Col>{product.countInStock>0 ? 
                                     <Badge bg="success">In Stock</Badge> :
                                     <Badge bg="danger">Unavailable</Badge>}</Col>
                                 </Row>

@@ -112,7 +112,7 @@ export default function DashboardScreen() {
               <Card>
                 <Card.Body>
                   <Card.Title>
-                    $
+                  <i class="fa fa-inr"></i> {" "}
                     {summary.orders && summary.users[0]
                       ? summary.orders[0].totalSales.toFixed(2)
                       : 0}

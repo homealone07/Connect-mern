@@ -175,12 +175,12 @@ const SignupScreens = () => {
             }
 
             <Form.Group className='mb-3' controlId="password">
-                <Form.Label>Confirm Password</Form.Label>
+                <Form.Label>Password</Form.Label>
                 <Form.Control type="password" onChange={(e)=>setPassword(e.target.value)} required />  
             </Form.Group>
 
             <Form.Group className='mb-3' controlId="confirmPassword">
-                <Form.Label>Password</Form.Label>
+                <Form.Label>Confirm Password</Form.Label>
                 <Form.Control type="password" onChange={(e)=>setConfirmPassword(e.target.value)} required />  
             </Form.Group>
 

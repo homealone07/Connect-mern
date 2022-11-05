@@ -26,7 +26,7 @@ const ShippingAddressScreen = () => {
     }
 
     useEffect(()=>{
-        if(!userInfo || !SMEInfo){
+        if(!userInfo){
             navigate("/signin?redirect=/shipping");
         }
     },[userInfo,navigate])

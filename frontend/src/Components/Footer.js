@@ -86,8 +86,8 @@ export default function Footer() {
       </section>
 
       <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-        © 2021 Copyright:
-        <a className='text-reset fw-bold' href='https://localhost:3000/'>
+        © Copyright:
+        <a className='text-reset fw-bold' href='http://localhost:3000/'>
           connect.com
         </a>
       </div>

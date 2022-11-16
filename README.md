@@ -13,7 +13,7 @@ These topics are discussed, with an emphasis on relational connectivity. This me
 Our study examines the key determinants of an effective website. A literature review revealed that the top categories of determining factors were page load speed, business content, navigation efficiency, security, and marketing/customer centricity. The relative importance of each category was determined by counting the number of citations in the literature and conducting a survey to gather opinions of 
 e-commerce customers and potential customers. The reported research is exploratory and aims to identify key issues perceived by various user groups. The main results showed that experts and consumers differed greatly in what they considered the most important factors.
 
-##Methodology
+## Methodology
 
 Looking at the current status of the local SMEs, we have come up with an outgrowing internet utility - “Connect”. In our internet utility, all small agency and medium companies sign in and add all the product and offerings info that they need for clients. For merchandise kind companies we're designing an internet ordering gadget in order that clients order from the internet utility. For provider-kind companies, we're advertising their income and offerings to the clients. So that clients engage with our utility and could touch the kind of provider that they need. For the Enterprises stop we're displaying the evaluation of the product/offerings from the information accumulated from the clients. From the evaluation of the product, we are able to offer analytics to the Enterprises for the boom in their business enterprise and economic control of the SMEs.  
 We have fragemented our project into 3 parts :
@@ -24,7 +24,7 @@ We have fragemented our project into 3 parts :
     3)	As a monetizing model:
               we charge small-scale employees for using our portal.
               
-#Conclusion
+## Conclusion
 E-commerce has completely transformed our lifestyles because we no longer need to spend time and money traveling to the market. Using e-commerce application development and web development solutions, a person can accelerate the growth of his online business. E-commerce development has made it feasible to minimize the cost of promoting items and services, making it one of the least expensive ways to conduct business.
 There are no temporal constraints on the sale of the merchandise. Even at midnight, one can access the Internet and sell things with a single mouse click. In the case of an online store, a website that is dynamic, user-friendly, and targeted can produce strong sales.
 
